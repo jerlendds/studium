@@ -1,8 +1,8 @@
 # netnotes
 
-## Extensions created using this template
+## Credits
 
-- [notlmn/copy-as-markdown](https://github.com/notlmn/copy-as-markdown) - Browser extension to copy hyperlinks, images, and selected text as Markdown.
+- [notlmn/browser-extension-template](https://github.com/notlmn/browser-extension-template) -- based off this template
 
 ## License
 
