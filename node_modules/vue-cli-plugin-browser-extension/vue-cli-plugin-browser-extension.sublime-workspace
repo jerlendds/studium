@@ -1,0 +1,1126 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"content",
+				"contentScriptFile"
+			],
+			[
+				"backgr",
+				"backgroundFile"
+			],
+			[
+				"back",
+				"backgroundFile"
+			],
+			[
+				"ch",
+				"chunkFilename"
+			],
+			[
+				"has",
+				"hasBackgroundFile"
+			],
+			[
+				"packa",
+				"packageScript"
+			],
+			[
+				"gitignore",
+				"gitignoreSnippet"
+			],
+			[
+				"regex",
+				"regex-replace-loader"
+			],
+			[
+				"webpack",
+				"webpackConfig"
+			],
+			[
+				"Webpac",
+				"WebpackSynchronizableShellPlugin"
+			],
+			[
+				"eslin",
+				"eslintConfig"
+			],
+			[
+				"LTK_EMAIL",
+				"LTK_EMAIL_CLIENT_ID"
+			],
+			[
+				"LTK",
+				"LTK_EMAIL"
+			],
+			[
+				"sen",
+				"senderSpy"
+			],
+			[
+				"userEmail",
+				"userEmailModule"
+			],
+			[
+				"bad",
+				"badSigilIdMessage"
+			],
+			[
+				"sigilMy",
+				"sigilMysqlParams"
+			],
+			[
+				"STATUS",
+				"STATUS_NOT_OK"
+			],
+			[
+				"promi",
+				"promiseFactory"
+			],
+			[
+				"proce",
+				"processorSpy"
+			],
+			[
+				"process",
+				"processorStub"
+			],
+			[
+				"LTK_EMA",
+				"LTK_EMAIL_TYPE"
+			],
+			[
+				"logging",
+				"loggingModule"
+			],
+			[
+				"callee",
+				"calleeMatches"
+			],
+			[
+				"send",
+				"senderPromise"
+			],
+			[
+				"format",
+				"formatterFactory"
+			],
+			[
+				"sparkpost",
+				"sparkpostClient"
+			],
+			[
+				"mock",
+				"mock_create_app_registration"
+			],
+			[
+				"proc",
+				"processor"
+			],
+			[
+				"ltk",
+				"ltk_client_whitelist"
+			],
+			[
+				"firehose",
+				"firehoseSpy"
+			],
+			[
+				"fireho",
+				"firehoseEvent"
+			],
+			[
+				"update",
+				"updateEmailStatusSpy"
+			],
+			[
+				"firhose",
+				"firehoseEventSpy"
+			],
+			[
+				"Fireho",
+				"firehoseEvent"
+			],
+			[
+				"sigil",
+				"sigilId"
+			],
+			[
+				"fire",
+				"firehoseEvent"
+			],
+			[
+				"checkA",
+				"checkAlreadySent"
+			],
+			[
+				"check",
+				"checkAlreadySentStub"
+			],
+			[
+				"si",
+				"sigil_id"
+			],
+			[
+				"header",
+				"headerBackup"
+			],
+			[
+				"mysql",
+				"mysqlParams"
+			],
+			[
+				"lambda_hand",
+				"lambad_handler_stub"
+			],
+			[
+				"welcome",
+				"welcome_emailer_stub"
+			],
+			[
+				"install",
+				"install_assets"
+			],
+			[
+				"Env",
+				"EnvironmentName"
+			],
+			[
+				"build_and",
+				"build_and_push"
+			],
+			[
+				"BUILD",
+				"BUILD_IMAGE_ENV_VARS"
+			],
+			[
+				"spark",
+				"sparkpostClient"
+			],
+			[
+				"sender",
+				"senderStub"
+			],
+			[
+				"delete",
+				"test_delete_indexed_images"
+			],
+			[
+				"index",
+				"index_image"
+			],
+			[
+				"mo",
+				"mock_calls"
+			],
+			[
+				"return",
+				"return_value"
+			],
+			[
+				"config",
+				"config_template"
+			],
+			[
+				"nunj",
+				"nunjucksEnvironment"
+			],
+			[
+				"templateHelp",
+				"templateHelpersModule"
+			],
+			[
+				"ltkMeta",
+				"ltkMetaFormatter"
+			],
+			[
+				"replica",
+				"replicasetName"
+			],
+			[
+				"mongoConnect",
+				"mongoConnectSpy"
+			],
+			[
+				"LTK_",
+				"LTK_MONGO_DB_NAME"
+			],
+			[
+				"uuid",
+				"uuidToBin"
+			],
+			[
+				"ltkStatsDB",
+				"ltkStatsDBPassword"
+			],
+			[
+				"checkAlready",
+				"checkAlreadySentStub"
+			],
+			[
+				"checkAlreadyS",
+				"checkAlreadySentStub"
+			],
+			[
+				"mogno",
+				"mongoModule"
+			],
+			[
+				"callback",
+				"callbackSpy"
+			],
+			[
+				"lam",
+				"lambdaTesterModule"
+			],
+			[
+				"transmissioN",
+				"transmissionStub"
+			],
+			[
+				"transmission",
+				"transmissionSpy"
+			],
+			[
+				"empty",
+				"emptyEvent"
+			],
+			[
+				"processor",
+				"processorStub"
+			],
+			[
+				"transmissionS",
+				"transmissionsStub"
+			],
+			[
+				"sparo",
+				"sparkpostTransmissions"
+			],
+			[
+				"mongo",
+				"mongoClientStub"
+			],
+			[
+				"decrypt",
+				"decryptKMSStub"
+			],
+			[
+				"translations",
+				"translationsDir"
+			],
+			[
+				"link",
+				"linkType"
+			],
+			[
+				"API_",
+				"API_GATEWAY_URL"
+			],
+			[
+				"locale",
+				"localeRegionMapping"
+			],
+			[
+				"Locale",
+				"localeRegionMapping"
+			],
+			[
+				"handle",
+				"handleError"
+			],
+			[
+				"ltkMon",
+				"ltkMongoDBPassword"
+			],
+			[
+				"text",
+				"text_file"
+			],
+			[
+				"render",
+				"render_mjml"
+			],
+			[
+				"for",
+				"forin\tfor … in … done"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.js",
+			"settings":
+			{
+				"buffer_size": 4666,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 837,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "generator/index.js",
+			"settings":
+			{
+				"buffer_size": 2534,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "generator/template/base-app/src/manifest.json",
+			"settings":
+			{
+				"buffer_size": 910,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "generator/template/dev-tools/src/dev-tools/dev-tools.html",
+			"settings":
+			{
+				"buffer_size": 316,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 5898,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "#!/usr/bin/env node\n\nconst path = require('path')\nconst fs = require('fs')\nconst BUNDLE_DIR = process.argv[2]\nconst bundles = [\n  'background.js',\n  'popup/popup.js',\n  'options/options.js' // TODO: find a way to generate « bundles » array dynamically\n]\n\nconst evalRegexForProduction = /;([a-z])=function\\(\\){return this}\\(\\);try{\\1=\\1\\|\\|Function\\(\"return this\"\\)\\(\\)\\|\\|\\(0,eval\\)\\(\"this\"\\)}catch\\(t\\){\"object\"==typeof window&&\\(\\1=window\\)}/g\nconst evalRegexForDevelopment = /;\\\\r\\\\n\\\\r\\\\n\\/\\/ This works in non-strict mode(?:.){1,304}/g\n\nconst removeEvals = (file) => {\n  return new Promise((resolve, reject) => {\n    fs.readFile(file, 'utf8', (err, data) => {\n      if (err) {\n        reject(err)\n        return\n      }\n\n      const regex = process.env.NODE_ENV === 'production' ? evalRegexForProduction : evalRegexForDevelopment\n\n      if (!regex.test(data)) {\n        resolve(`No CSP specific code found in ${file}.`)\n        return\n      }\n\n      data = data.replace(regex, '=window;')\n\n      fs.writeFile(file, data, (err) => {\n        if (err) {\n          reject(err)\n          return\n        }\n\n        resolve()\n      })\n    })\n  })\n}\n\nconst main = () => {\n  bundles.forEach(bundle => {\n    removeEvals(path.join(BUNDLE_DIR, bundle))\n      .catch(console.error)\n  })\n}\n\nmain()\n",
+			"file": "scripts/remove-evals.js",
+			"file_size": 1291,
+			"file_write_time": 131770698765098482,
+			"settings":
+			{
+				"buffer_size": 1289,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"premove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"reint",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reindent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"index",
+				"Indexing Status"
+			],
+			[
+				"trailing",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pretty",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"prety",
+				"Pretty JSON: Validate"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"clear",
+				"SublimeLinter: Clear Caches"
+			],
+			[
+				"javasci",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"trailni",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"xml",
+				"Indent XML"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			]
+		],
+		"width": 680.0
+	},
+	"console":
+	{
+		"height": 141.0,
+		"history":
+		[
+			"sys.version_info",
+			"import sys",
+			"version",
+			"import this",
+			"dir(os)",
+			"import os"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/adam/github/vue-cli-plugin-browser-extension",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/base-app",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/base-app/src",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/dev-tools",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/dev-tools/src",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/dev-tools/src/dev-tools",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/standalone",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/standalone/src",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/standalone/src/standalone"
+	],
+	"file_history":
+	[
+		"/Users/adam/nastygoat/linkninja/vue-client/.git/COMMIT_EDITMSG",
+		"/Users/adam/nastygoat/linkninja/client/.git/COMMIT_EDITMSG",
+		"/Users/adam/nastygoat/linkninja/client/.git/rebase-merge/git-rebase-todo",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/prompts.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/.git/COMMIT_EDITMSG",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/base-app/src/manifest.json",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/README.md",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/package.json",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/index.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/base-app/src/background.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/scripts/remove-evals.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/popup/src/popup/router/pages/Index.vue",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/index.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/content-script/src/content-script.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/scripts/build-zip.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/popup/popup.html",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/background.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/manifest.json",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/.eslintrc.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/popup/router/pages/index.vue",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/popup/App.vue",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/popup/router/index.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/popup/router/routes.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/popup/popup.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/store/mutations.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/store/mutation-types.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/store/index.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/store/getters.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator/template/src/store/actions.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/generator.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/ui.js",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/.editorconfig",
+		"/Users/adam/github/vue-cli-plugin-browser-extension/locales/en.json",
+		"/Users/adam/nastygoat/linkninjax-ext/.git/COMMIT_EDITMSG",
+		"/Users/adam/nastygoat/linkninjax-ext/webpack.config.js",
+		"/Users/adam/nastygoat/linkninjax-ext/packages/vue-cli-plugin-browser-extension/package.json",
+		"/Users/adam/Desktop/Screen Shot 2018-07-10 at 2.30.52 AM.png",
+		"/Users/adam/nastygoat/linkninjax-ext/packages/vue-cli-plugin-browser-extension/ui.js",
+		"/Users/adam/nastygoat/linkninjax-ext/packages/vue-cli-plugin-browser-extension/locales/en.json",
+		"/Users/adam/nastygoat/linkninjax-ext/packages/vue-cli-plugin-browser-extension/generator.js",
+		"/Users/adam/nastygoat/linkninjax-ext/package.json",
+		"/Users/adam/nastygoat/linkninjax-ext/src/background.js",
+		"/Users/adam/nastygoat/linkninjax-ext/src/popup/App.vue",
+		"/Users/adam/nastygoat/linkninjax-ext/packages/vue-cli-plugin-browser-extension/index.js",
+		"/Users/adam/nastygoat/linkninjax-ext/.babelrc",
+		"/Users/adam/nastygoat/linkninjax-ext/chrome/manifest.json",
+		"/Users/adam/nastygoat/linkninjax-ext/README.md",
+		"/Users/adam/nastygoat/linkninjax-ext/src/popup/router/pages/Index.vue",
+		"/Users/adam/nastygoat/linkninjax-ext/yarn-error.log",
+		"/Users/adam/nastygoat/linkninjax-ext/src/manifest.json",
+		"/Users/adam/nastygoat/linkninjax-ext/node_modules/vue-cli-plugin-chrome-extension/package.json",
+		"/Users/adam/nastygoat/linkninjax-ext/node_modules/vue-cli-plugin-chrome-extension/index.js",
+		"/Users/adam/nastygoat/linkninjax-ext/src/popup/root.vue",
+		"/Users/adam/nastygoat/linkninjax-ext/src/popup/index.js",
+		"/Users/adam/nastygoat/linkninjax-ext/src/options/index.js",
+		"/Users/adam/nastygoat/linkninjax-ext/src/content/inject.js",
+		"/Users/adam/nastygoat/linkninjax-ext/src/options/root.vue",
+		"/Users/adam/nastygoat/linkninjax-ext/src/content/index.js",
+		"/Users/adam/nastygoat/linkninjax-ext/src/background/index.js",
+		"/Users/adam/nastygoat/linkninjax-ext/manifest.js",
+		"/Users/adam/nastygoat/linkninjax-ext/LinkNinja X.safariextension/background.js",
+		"/Users/adam/nastygoat/linkninjax-ext/LinkNinja X.safariextension/Info.plist",
+		"/Users/adam/nastygoat/linkninjax-ext/LinkNinja X.safariextension/popover.html",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/.env.development",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/.env",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/package.json",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/lib/template.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/cloudformation/template.yml",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/yarn.lock",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/lib/processor.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/templates/likes_email_template.j2.mjml",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/lib/templateHelpers.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/.git/COMMIT_EDITMSG",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/fixtures/sparkpost_success.json",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/README.md",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/Gruntfile.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/lib/translations.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/lib/templateHelpers.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/lib/template.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/lib/stats.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/lib/sender.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/lib/processor.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/lib/ltks.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/lib/logging.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/lib/logEmail.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/lib/localeRegionmapping.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/index.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/lib/translations.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/lib/logging.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/lib/ltks.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/lib/stats.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/lib/sender.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/lib/logEmail.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/.eslintrc.json",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/.eslintrc.json",
+		"/Users/adam/nastygoat/ltk/services/ltk/.git/rebase-merge/git-rebase-todo",
+		"/Users/adam/nastygoat/ltk/lambdas/sigil-sync/sigil_sync/logging.py",
+		"/Users/adam/nastygoat/ltk/state-machines/gdpr-erasure/lambda_functions/__main__.py",
+		"/Users/adam/nastygoat/ltk/state-machines/gdpr-erasure/lambda_functions/logging.py",
+		"/Users/adam/nastygoat/ltk/lambdas/welcome-emailer/build.sh",
+		"/Users/adam/nastygoat/ltk/lambdas/welcome-emailer/.coveragerc",
+		"/Users/adam/nastygoat/ltk/state-machines/gdpr-erasure/build.sh",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/templates/likes_email_template.j2.html",
+		"/Users/adam/nastygoat/ltk/lambdas/missing-token-emailer/lib/template.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/babel/babel.ini",
+		"/Users/adam/nastygoat/ltk/lambdas/missing-token-emailer/templates/missing_token_email_template.j2.mjml",
+		"/Users/adam/nastygoat/ltk/lambdas/missing-token-emailer/Gruntfile.js",
+		"/Users/adam/nastygoat/ltk/lambdas/missing-token-emailer/.git/COMMIT_EDITMSG",
+		"/Users/adam/nastygoat/ltk/lambdas/missing-token-emailer/translations/ltk_missing_token_emailer.pot",
+		"/Users/adam/nastygoat/ltk/lambdas/welcome-emailer/babel/babel.ini",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/lib/userEmail.test.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/lib/userEmail.js",
+		"/Users/adam/Downloads/prod-ltk-likes-emailer-1-2018-05-14-20-30-19-f99b36f2-a753-416a-a79f-61ab1d99f4bf",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/index.js",
+		"/Users/adam/Downloads/dev-ltk-likes-emailer-2-2018-03-22-19-45-12-cb5c445a-dc51-40d8-a96b-ce43f18e25da",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/context.json",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/event.json",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/node_modules/ssm-config/lib/SsmConfig.js",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/.git/rebase-merge/git-rebase-todo",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/tests/event.json",
+		"/Users/adam/nastygoat/ltk/lambdas/missing-token-emailer/babel/babel.ini",
+		"/Users/adam/nastygoat/ltk/lambdas/missing-token-emailer/templates/missing_token_email_template.j2.html",
+		"/Users/adam/nastygoat/ltk/lambdas/welcome-emailer/.tx/config",
+		"/Users/adam/nastygoat/ltk/lambdas/welcome-emailer/welcome_emailer/templates/welcome_email_template.mjml",
+		"/Users/adam/nastygoat/ltk/lambdas/welcome-emailer/welcome_emailer/templates/welcome_email_template.html",
+		"/Users/adam/nastygoat/ltk/lambdas/welcome-emailer/.git/COMMIT_EDITMSG",
+		"/Users/adam/nastygoat/ltk/lambdas/likes-emailer/.circleci/config.yml",
+		"/Users/adam/nastygoat/ltk/lambdas/sigil-sync/sigil_sync/processor.py"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 136.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"standalone",
+			"popup",
+			"(options.",
+			"(options.popup) {\n    api.render",
+			"options.",
+			"contentScript",
+			"/",
+			"options.",
+			"outputDir",
+			"rootOptions.projectName",
+			"{",
+			"hasContentScriptFile",
+			"config",
+			"popup",
+			"F(",
+			"f",
+			"F",
+			"isNotProduction",
+			"process.env.NODE_ENV !== 'production'",
+			"process.end.NODE_ENV !== 'production'",
+			";",
+			"BUNDLE_DIR"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.216.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.25.region_keys":
+							[
+							],
+							"SL.76.region_keys":
+							[
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								717,
+								717
+							]
+						],
+						"settings":
+						{
+							"SL.26.region_keys":
+							[
+							],
+							"SL.423.region_keys":
+							[
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Materialize/Langs/npm JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "generator/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2534,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.27.region_keys":
+							[
+							],
+							"SL.427.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"SL.78.region_keys":
+							[
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 359.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "generator/template/base-app/src/manifest.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 910,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"SL.28.region_keys":
+							[
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "generator/template/dev-tools/src/dev-tools/dev-tools.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 316,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								316
+							]
+						],
+						"settings":
+						{
+							"SL.166.region_keys":
+							[
+							],
+							"SL.29.region_keys":
+							[
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5898,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2642,
+								2642
+							]
+						],
+						"settings":
+						{
+							"SL.30.region_keys":
+							[
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "scripts/remove-evals.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								154,
+								154
+							]
+						],
+						"settings":
+						{
+							"SL.31.region_keys":
+							[
+							],
+							"SL.419.region_keys":
+							[
+								"sublime_linter.protected_regions"
+							],
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 51.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-main-output":
+	{
+		"height": 122.0
+	},
+	"output.SublimeLinter":
+	{
+		"height": 110.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 122.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "vue-cli-plugin-browser-extension.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"pack",
+				"likes-emailer/package.json"
+			],
+			[
+				"package",
+				"likes-emailer/package.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "jobs",
+		"selected_items":
+		[
+			[
+				"jobs",
+				"~/Documents/Sublime Projects/ltk-jobs.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 232.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

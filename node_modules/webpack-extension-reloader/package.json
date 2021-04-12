@@ -1,0 +1,106 @@
+{
+  "name": "webpack-extension-reloader",
+  "version": "1.1.4",
+  "private": false,
+  "description": "Watch for changes and force the reload of the browser extension",
+  "main": "dist/webpack-extension-reloader.js",
+  "bin": "./dist/webpack-extension-reloader-cli.js",
+  "types": "typings/webpack-extension-reloader.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rubenspgcavalcante/webpack-extension-reloader.git"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  },
+  "lint-staged": {
+    "*.{ts}": [
+      "yarn lint:files",
+      "yarn format:files",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "build": "NODE_ENV=production webpack",
+    "test": "NODE_ENV=test webpack && mocha dist/tests.js",
+    "analyze": "NODE_ENV=production webpack --env.analyze",
+    "start:dev": "NODE_ENV=development webpack --watch",
+    "start:sample": "NODE_ENV=development webpack --config sample/webpack.plugin.js --watch",
+    "prepublishOnly": "yarn build",
+    "lint": "tslint \"{src,client,typings,specs}/**/*.ts\" --fix --format codeFrame",
+    "format": "prettier --write \"{src,client,typings,specs}/**/*.ts\"",
+    "lint:files": "tslint --fix --format codeFrame",
+    "format:files": "prettier --write"
+  },
+  "author": "Rubens Pinheiro Gonçalves Cavalcante",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rubenspgcavalcante/webpack-extension-reloader/issues"
+  },
+  "homepage": "https://github.com/rubenspgcavalcante/webpack-extension-reloader#readme",
+  "keywords": [
+    "webpack",
+    "plugin",
+    "browser",
+    "extension",
+    "WebExtensions",
+    "hot-reload"
+  ],
+  "dependencies": {
+    "@types/webpack": "^4.39.8",
+    "@types/webpack-sources": "^0.1.5",
+    "colors": "^1.4.0",
+    "lodash": "^4.17.15",
+    "minimist": "^1.2.0",
+    "useragent": "^2.3.0",
+    "webextension-polyfill": "^0.5.0",
+    "webpack-sources": "^1.4.3",
+    "ws": "^7.2.0"
+  },
+  "peerDependencies": {
+    "webpack": "^4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-logical-assignment-operators": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-regenerator": "^7.4.5",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "@types/chai": "^4.2.4",
+    "@types/colors": "^1.2.1",
+    "@types/lodash": "^4.14.144",
+    "@types/minimist": "^1.2.0",
+    "@types/mocha": "^5.2.7",
+    "@types/sinon": "^7.5.0",
+    "@types/useragent": "^2.1.1",
+    "@types/ws": "^6.0.3",
+    "autoprefixer": "^9.6.5",
+    "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "css-loader": "^3.2.0",
+    "husky": "^3.0.9",
+    "json-loader": "^0.5.7",
+    "lint-staged": "^9.4.2",
+    "mini-css-extract-plugin": "^0.8.0",
+    "mocha": "^6.2.2",
+    "prettier": "^1.19.1",
+    "raw-loader": "^3.1.0",
+    "sinon": "^7.5.0",
+    "source-map-support": "^0.5.16",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.2.1",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-bundle-analyzer": "^3.6.0",
+    "webpack-cli": "^3.3.9"
+  }
+}
