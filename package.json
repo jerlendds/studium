@@ -2,20 +2,25 @@
   "name": "netnotes",
   "version": "1.0.0",
   "private": true,
-  "description": "",
+  "description": "Collect and use information and ideas from the internet efficiently",
   "author": "Jordan <jerlends_0x0@protonmail.com> (https://jerlends.com/)",
   "scripts": {
+    "build": "vue-cli-service build",
     "serve": "vue-cli-service build --mode development --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "index.js",
+  "dependencies": {
+    "cytoscape": "^3.18.2",
+    "vue": "^2.6.12"
+  },
   "devDependencies": {
-    "vue-cli-plugin-browser-extension": "~0.25.2",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
-    "vue-template-compiler": "^2.6.11",
+    "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/cli-plugin-router": "~4.5.0"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
+    "vue-cli-plugin-browser-extension": "~0.25.2",
+    "vue-template-compiler": "^2.6.11"
   },
   "bugs": {
     "url": "https://github.com/jerlendds/netnotes/issues"
@@ -26,8 +31,5 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jerlendds/netnotes.git"
-  },
-  "dependencies": {
-    "vue": "^2.6.12"
   }
 }

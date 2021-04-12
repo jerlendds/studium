@@ -1,12 +1,25 @@
 <template>
-  <hello-world />
+    <div id="app">
+        <h2 style="font-family: 'Source Sans Pro'; font-weight: 400;">Text</h2>
+
+    </div>
 </template>
 
-<script>
-import HelloWorld from '@/components/HelloWorld.vue'
+<style src="@/assets/styles/tailwind.css" scoped>
+</style>
 
+<script>
 export default {
-  name: 'App',
-  components: { HelloWorld }
-}
+    name: "App",
+
+    components: {},
+
+    data() {
+        return {};
+    },
+
+    mounted() {},
+
+    methods: {},
+};
 </script>
