@@ -1,5 +1,5 @@
 {
-  "name": "netnotes",
+  "name": "studium",
   "version": "1.0.0",
   "private": true,
   "description": "Collect and use information and ideas from the internet efficiently",
@@ -7,7 +7,7 @@
   "scripts": {
     "build": "vue-cli-service build",
     "serve": "vue-cli-service build --mode development --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no tests?! you filthy animal\" && exit 0"
   },
   "main": "index.js",
   "dependencies": {
@@ -20,6 +20,7 @@
     "@vue/cli-service": "~4.5.0",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
     "vue-cli-plugin-browser-extension": "~0.25.2",
+    "vue-material-design-icons": "^4.11.0",
     "vue-template-compiler": "^2.6.11"
   },
   "bugs": {
