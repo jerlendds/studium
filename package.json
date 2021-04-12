@@ -1,5 +1,33 @@
 {
+  "name": "netnotes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "author": "Jordan <jerlends_0x0@protonmail.com> (https://jerlends.com/)",
+  "scripts": {
+    "serve": "vue-cli-service build --mode development --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "index.js",
+  "devDependencies": {
+    "vue-cli-plugin-browser-extension": "~0.25.2",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.3",
+    "vue-template-compiler": "^2.6.11",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/jerlendds/netnotes/issues"
+  },
+  "homepage": "https://github.com/jerlendds/netnotes#readme",
+  "keywords": [],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jerlendds/netnotes.git"
+  },
   "dependencies": {
-    "vue-cli-plugin-browser-extension": "^0.25.2"
+    "vue": "^2.6.12"
   }
 }
