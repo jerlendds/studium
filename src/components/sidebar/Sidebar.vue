@@ -18,7 +18,7 @@
                 :key="tab.name"
                 :class="{'bg-opacity-100 shadow-3':tab.name == activeSidebarTab}"
                 class="my-1 flex bg-white-300 bg-opacity-0 rounded hover:shadow-3">
-                <router-link :to="tab.path">
+                <router-link class="w-full" :to="tab.path">
                 <button
                     class="flex py-2 px-6 items-center justify-start w-full no-focus"
                     @click="activeSidebarTab = tab.name, tab.active = true">
@@ -75,7 +75,7 @@ export default {
             sidebarTabs: [
                 {
                     name: "Overview",
-                    path: "/overview",
+                    path: "/",
                     component: ChartBox,
                     activeComponent: ChartBoxOutline,
                 },

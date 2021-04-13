@@ -33,6 +33,10 @@
   </p>
 </p>
 
+#### Project Status
+
+This project currently **isn't ready for public use.** If you're interested in contributing feel free to reach out and <a href="#contact">contact</a> me
+
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
@@ -63,7 +67,9 @@
 
 ## About The Project
 
-retain, recall, and start remembering information and ideas from your websites. coming soon...
+**coming soon...**
+
+Efficiently collect, store, and learn from information on websites. Eventually I want to integrate with other note taking applications (Notion, RemNote, etc) but for now the core feature is being able to cite and store whatever text you highlight on a webpage. When you store it you have an option to add additional notes, create flashcards from what you have, and or set review reminders
 
 ### Built With
 
@@ -107,6 +113,8 @@ This is an example of how to list things you need to use the software and how to
 
 The resulting extension can be found in the `dist/` directory.
 
+**Note:** _`Uncaught EvalError: call to eval() blocked by CSP` if this error is recieved navigate to `about:config` and set `security.csp.enable false`_
+
 **Note:** _Firefox is the only supported browser at this time. Ideally, chrome isn't too far off_
 
 ## Usage
@@ -137,7 +145,9 @@ Jerlends - [@jerlends_0x0](https://twitter.com/@jerlends_0x0) - jerlends@tuta.io
 
 Project Link: [https://github.com/jerlendds/studium](https://github.com/jerlendds/studium)
 
-<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+
+I would like to thank Noah#3612 for being an early supporter of this project.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

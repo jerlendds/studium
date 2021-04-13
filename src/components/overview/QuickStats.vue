@@ -5,19 +5,18 @@
                 v-for="stat in noteStats" 
                 :key="stat.description" 
                 class="flex flex-col px-6 py-5">
-            <div class="flex-col items-center flex">
-                <div class="flex shadow-64 items-end font-darkgray-400">
+                <div class="flex-col items-center flex">
+                    <div class="flex shadow-64 items-end font-darkgray-400">
 
-                        <h1 class="text-6xl body">{{stat.value}}</h1>
-                            <component
-                                    class="flex flex-col h-full justify-end target-svg fill-current" 
-                                    v-if="false" 
-                                    :is="icons.neutralIcon"></component>
+                            <h1 class="text-6xl body">{{stat.value}}</h1>
+                                <component
+                                        class="flex flex-col h-full justify-end target-svg fill-current" 
+                                        v-if="false" 
+                                        :is="icons.neutralIcon"></component>
+                    </div>
+                    <p class="text-lightgray-500 sans text-lg font-medium">{{stat.description}}</p>
+
                 </div>
-                <p class="text-lightgray-500 sans text-lg font-medium">{{stat.description}}</p>
-
-            </div>
-
             </li>
         </ul>
     </section>

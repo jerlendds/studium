@@ -11,7 +11,7 @@ import Calendar from './views/Calendar.vue';
 Vue.use(VueRouter)
 
 const routes = [
-  { path: '/overview', component: Overview },
+  { path: '/', component: Overview },
   { path: '/all-notes', component: AllNotes },
   { path: '/favourites', component: Favourites },
   { path: '/flashcards', component: Flashcards },
