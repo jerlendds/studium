@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/jerlendds/netnotes#readme",
   "keywords": [],
-  "license": "MIT",
+  "license": "GPLv3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jerlendds/netnotes.git"

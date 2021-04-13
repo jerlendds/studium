@@ -1,7 +1,7 @@
 <template>
     <aside v-if="showSidebar">
         <header class="flex items-center justify-between pt-1">
-            <h2 class="font-serif text-2xl font-semibold flex items-center">Studium<sup class="text-sm font-body">PRO</sup></h2>
+            <h2 class="font-serif text-2xl font-semibold flex items-center">Studium<sup class="text-sm font-body">FREE</sup></h2>
             <button>
                 <settings-icon-o />
             </button>
