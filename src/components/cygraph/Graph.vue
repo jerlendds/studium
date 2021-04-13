@@ -3,8 +3,7 @@
         v-if="showCyGraph"
         ref="gnodes"
         id="gnodes"
-        style="height: 400px; width: 400px;"
-    ></div>
+        style="height: 400px; width: 400px;"></div>
 </template>
 
 <script>
@@ -13,7 +12,7 @@ import cytoscape from "cytoscape";
 export default {
     name: "Graph",
 
-    components: { HelloWorld },
+    components: {},
 
     data() {
         return {

@@ -1,8 +1,8 @@
 <template>
     <aside
         class="flex flex-col w-1/6 p-2 bg-white-50"
-        v-if="showSidebar"
-    >
+        v-if="showSidebar">
+
         <header class="flex items-center justify-between pt-1 px-2">
 
             <h2 class="font-serif text-2xl font-semibold flex items-center">Studium<sup class="text-sm font-body">FREE</sup></h2>
@@ -13,36 +13,34 @@
         </header>
 
         <menu class="flex flex-col justify-between  list-none p-0 font-sans text-lg">
-
             <li
                 v-for="tab in sidebarTabs"
                 :key="tab.name"
                 :class="{'bg-opacity-100 shadow-sm':tab.name == activeSidebarTab}"
-                class="my-1 flex bg-white-300 bg-opacity-0 rounded shadow-none"
-            >
+                class="my-1 flex bg-white-300 bg-opacity-0 rounded shadow-none">
+
                 <button
                     class="flex py-2 px-6 items-center justify-start w-full no-focus"
-                    @click="activeSidebarTab = tab.name, tab.active = true"
-                >
+                    @click="activeSidebarTab = tab.name, tab.active = true">
+                    
                     <component
                         v-if="tab.name == activeSidebarTab"
                         class="fill-current text-curious-blue-600"
-                        :is="tab.component"
-                    ></component>
+                        :is="tab.component"></component>
                     <component
                         v-if="tab.name != activeSidebarTab"
                         :class="{'text-curious-blue-600':tab.name == activeSidebarTab}"
                         class="fill-current text-lightgray-700"
-                        :is="tab.activeComponent"
-                    ></component>
+                        :is="tab.activeComponent"></component>
                     <p
                         class="pl-6 text-gray-700"
                         :class="{'text-curious-blue-600':tab.name == activeSidebarTab}"
                     >{{tab.name}}</p>
+
                 </button>
             </li>
-
         </menu>
+
     </aside>
 </template>
 
