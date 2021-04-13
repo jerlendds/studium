@@ -1,13 +1,19 @@
 <template>
-    <aside v-if="showSidebar">
-        <header class="flex items-center justify-between pt-1">
+    <aside
+        class="flex flex-col w-1/6 p-2 bg-white-50"
+        v-if="showSidebar"
+    >
+        <header class="flex items-center justify-between pt-1 px-2">
+
             <h2 class="font-serif text-2xl font-semibold flex items-center">Studium<sup class="text-sm font-body">FREE</sup></h2>
-            <button>
-                <settings-icon-o />
+            <button class="no-focus rotate-cog">
+                <settings-icon />
             </button>
+
         </header>
 
         <menu class="flex flex-col justify-between  list-none p-0 font-sans text-lg">
+
             <li
                 v-for="tab in sidebarTabs"
                 :key="tab.name"
@@ -33,9 +39,9 @@
                         class="pl-6 text-gray-700"
                         :class="{'text-curious-blue-600':tab.name == activeSidebarTab}"
                     >{{tab.name}}</p>
-
                 </button>
             </li>
+
         </menu>
     </aside>
 </template>
@@ -58,22 +64,15 @@ import ChartBoxOutline from "vue-material-design-icons/ChartBoxOutline";
 export default {
     name: "Sidebar",
 
+    props: ["showSidebar", "activeTab"],
+
     components: {
-        overviewIcon: ChartBox,
-        overviewIconO: ChartBoxOutline,
-        settingsIconO: CogOutline,
-        allnotesIconO: NoteMultipleOutline,
-        allnotesIcon: NoteMultiple,
-        starIcon: Star,
-        flashcardIcon: CardText,
-        calendarIcon: Calendar,
+        settingsIcon: CogOutline,
     },
 
     data() {
         return {
             activeSidebarTab: "Overview",
-            showSidebar: true,
-
             sidebarTabs: [
                 {
                     name: "Overview",
@@ -107,8 +106,22 @@ export default {
     mounted() {},
 
     methods: {},
+
+    computed: {
+        getActiveTab: function () {
+            this.activeSidebarTab = activeTab;
+            return this.activeSidebarTab;
+        },
+    },
 };
 </script>
 
 <style scoped>
+.rotate-cog {
+    transition: transform 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
+
+.rotate-cog:hover {
+    transform: rotate(45deg);
+}
 </style>

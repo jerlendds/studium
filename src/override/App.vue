@@ -3,13 +3,13 @@
         id="app"
         class="flex w-full h-full"
     >
-        <!-- Sidebar -->
-        <div class="flex flex-col w-1/6 p-2 bg-white-50">
-            <sidebar />
-        </div>
+        <sidebar
+            :showSidebar="true"
+            activeTab="Overview"
+        />
 
         <!-- Main view -->
-        <div class="flex flex-col w-5/6 font-body">
+        <div class="flex flex-col w-full font-body">
             <!-- Search header bar -->
             <header class="w-full flex items-center">
                 <form
@@ -18,11 +18,11 @@
                 >
                     <input
                         type="text"
-                        placeholder="Search or create a note..."
-                        class="bg-gray-50 text-gray-600 placeholder-gray-400 flex-grow font-sans min-w-max p-2 rounded-l "
+                        placeholder="Search notes..."
+                        class="bg-lightgray-50 placeholder-lightgray-300 flex-grow font-sans min-w-max p-2 rounded-l "
                     />
                     <button class="flex">
-                        <search-icon class="bg-gray-50 p-2 rounded-r shadow-sm" />
+                        <search-icon class="bg-lightgray-50 p-2 rounded-r shadow-sm" />
                     </button>
 
                 </form>
