@@ -18,7 +18,7 @@
                 :key="tab.name"
                 :class="{'bg-opacity-100 shadow-3':tab.name == activeSidebarTab}"
                 class="my-1 flex bg-white-300 bg-opacity-0 rounded hover:shadow-3">
-
+                <router-link :to="tab.path">
                 <button
                     class="flex py-2 px-6 items-center justify-start w-full no-focus"
                     @click="activeSidebarTab = tab.name, tab.active = true">
@@ -38,6 +38,7 @@
                     >{{tab.name}}</p>
 
                 </button>
+                </router-link>
             </li>
         </menu>
 
@@ -74,26 +75,31 @@ export default {
             sidebarTabs: [
                 {
                     name: "Overview",
+                    path: "/overview",
                     component: ChartBox,
                     activeComponent: ChartBoxOutline,
                 },
                 {
                     name: "All Notes",
+                    path: "/all-notes",
                     component: NoteMultiple,
                     activeComponent: NoteMultipleOutline,
                 },
                 {
                     name: "Favourites",
+                    path: "/favourites",
                     component: Star,
                     activeComponent: StarOutline,
                 },
                 {
                     name: "Flashcards",
+                    path: "/flashcards",
                     component: CardText,
                     activeComponent: CardTextOutline,
                 },
                 {
                     name: "Calendar",
+                    path: "/calendar",
                     component: Calendar,
                     activeComponent: CalendarOutline,
                 },

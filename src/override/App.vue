@@ -15,13 +15,6 @@
                     :showSearch="true" />
             </header>
 
-           
-            <!-- Essential components will live here... -->
-            <stats 
-                :notesAddedToday="0" 
-                :notesAddedMonth="0"
-                :notesReviewedToday="0" />
-            
             <router-view></router-view>
         </div>
     </main>

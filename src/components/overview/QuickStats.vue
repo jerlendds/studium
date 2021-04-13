@@ -14,7 +14,7 @@
                                     v-if="false" 
                                     :is="icons.neutralIcon"></component>
                 </div>
-                <p class="text-lightgray-600 sans text-lg font-medium">{{stat.description}}</p>
+                <p class="text-lightgray-500 sans text-lg font-medium">{{stat.description}}</p>
 
             </div>
 
