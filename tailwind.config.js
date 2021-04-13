@@ -18,6 +18,11 @@ module.exports = {
 
     boxShadow: {
       '1': 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
+      '2': 'rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px',
+      '3': 'rgba(0, 0, 0, 0.16) 0px 1px 4px',
+      '4': 'rgba(0, 0, 0, 0.1) 0px 4px 12px',
+      '5': 'rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px',
+      '6': 'rgba(0, 0, 0, 0.08) 0px 3px 6px, rgba(0, 0, 0, 0.12) 0px 3px 6px',
       '65': 'rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px',
       sm: '0 1px 2px 0 rgba(0, 0, 0, 0.05)',
       DEFAULT: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
@@ -148,7 +153,10 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['focus'],
+      boxShadow: ['focus'],
+    }
   },
   plugins: [],
 }

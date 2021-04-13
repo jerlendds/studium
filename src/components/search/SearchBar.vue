@@ -1,13 +1,13 @@
 <template>
   <form
-    class="flex w-11/12 items-center justify-center ">
+    class="flex w-11/12 items-center justify-center shadow-6">
     <input
       type="text"
       :placeholder="searchPlaceholder"
       v-model="searchQuery"
-      class="bg-lightgray-50 placeholder-lightgray-300 flex-grow font-sans min-w-max p-2 rounded-l"/>
+      class="bg-white-100 focus:bg-white-50 placeholder-lightgray-300 flex-grow font-sans min-w-max p-2 rounded-l no-focus"/>
     <button class="flex">
-      <search-icon class="bg-lightgray-50 p-2 rounded-r" />
+      <search-icon class="bg-white-100 fill-current text-darkgray-300 p-2 rounded-r" />
     </button>
   </form>
 </template>

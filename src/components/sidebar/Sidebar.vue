@@ -16,8 +16,8 @@
             <li
                 v-for="tab in sidebarTabs"
                 :key="tab.name"
-                :class="{'bg-opacity-100 shadow-sm':tab.name == activeSidebarTab}"
-                class="my-1 flex bg-white-300 bg-opacity-0 rounded shadow-none">
+                :class="{'bg-opacity-100 shadow-3':tab.name == activeSidebarTab}"
+                class="my-1 flex bg-white-300 bg-opacity-0 rounded hover:shadow-3">
 
                 <button
                     class="flex py-2 px-6 items-center justify-start w-full no-focus"

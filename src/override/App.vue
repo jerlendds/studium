@@ -1,7 +1,7 @@
 <template>
     <main
         id="app"
-        class="flex w-full h-full sans">
+        class="flex w-full h-full font-sans">
         <sidebar
             :showSidebar="true"
             activeTab="Overview"/>
@@ -9,17 +9,20 @@
         <div class="flex flex-col w-5/6 items-center h-full w-full font-body">
             <header class="w-full flex justify-center items-center">
                 <search-bar 
-                    class="p-3" 
+                    class="m-3" 
                     placeholderValue="Search notes..." 
                     searchInput="" 
                     :showSearch="true" />
             </header>
 
+           
             <!-- Essential components will live here... -->
             <stats 
                 :notesAddedToday="0" 
                 :notesAddedMonth="0"
                 :notesReviewedToday="0" />
+            
+            <router-view></router-view>
         </div>
     </main>
 </template>
