@@ -1,7 +1,7 @@
 node_modules/
+.github/
 # Vue Browser Extension Output
 *.pem
 *.pub
 *.zip
 /artifacts
-.github/

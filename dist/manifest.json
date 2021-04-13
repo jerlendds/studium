@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Studium",
+  "name": "__MSG_extName__",
   "homepage_url": "http://localhost:8080/",
-  "description": "Collect and use information and ideas from the internet efficiently",
+  "description": "A Vue Browser Extension",
   "default_locale": "en",
   "permissions": [
     "activeTab",
