@@ -1,6 +1,6 @@
 <template>
     <aside
-        class="flex flex-col w-1/6 p-2 bg-white-50"
+        class="flex flex-col w-1/6 p-2 bg-white-50 h-screen"
         v-if="showSidebar">
 
         <header class="flex items-center justify-between pt-1 px-2">

@@ -105,6 +105,10 @@ This is an example of how to list things you need to use the software and how to
    npm run build
    ```
 
+The resulting extension can be found in the `dist/` directory.
+
+**Note:** _Firefox is the only supported browser at this time. Ideally, chrome isn't too far off_
+
 ## Usage
 
 _For more examples, please refer to the [Documentation](https://github.com/jerlendds/studium/tree/master/docs)_

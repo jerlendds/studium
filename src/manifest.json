@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "__MSG_extName__",
+  "name": "Studium",
   "homepage_url": "http://localhost:8080/",
-  "description": "A Vue Browser Extension",
+  "description": "retain, recall, and start remembering information and ideas from your websites",
   "default_locale": "en",
   "permissions": [
     "activeTab",
@@ -10,9 +10,9 @@
     "*://*/*"
   ],
   "icons": {
-    "16": "icons/16.png",
-    "48": "icons/48.png",
-    "128": "icons/128.png"
+    "16": "icons/logo.svg",
+    "48": "icons/logo.svg",
+    "128": "icons/logo.svg"
   },
   "background": {
     "scripts": [
@@ -23,10 +23,10 @@
   "devtools_page": "devtools.html",
   "browser_action": {
     "default_popup": "popup.html",
-    "default_title": "__MSG_extName__",
+    "default_title": "Studium",
     "default_icon": {
-      "19": "icons/19.png",
-      "38": "icons/38.png"
+      "19": "icons/logo.svg",
+      "38": "icons/logo.svg"
     }
   },
   "options_ui": {

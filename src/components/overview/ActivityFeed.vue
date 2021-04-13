@@ -5,14 +5,16 @@
 </template>
 
 <script>
-// import "vue-material-design-icons";
+import ActivityFeedWidgets from 'ActivityFeedWidgets.vue';
 
 export default {
-    name: "",
+    name: "ActivityFeed",
 
     props: [],
 
-    components: {},
+    components: {
+        widgets: ActivityFeedWidgets,
+    },
 
     data() {
         return {};
