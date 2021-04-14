@@ -3,4 +3,5 @@ node_modules/
 *.pem
 *.pub
 *.zip
-/artifacts
+artifacts/
+dist/
