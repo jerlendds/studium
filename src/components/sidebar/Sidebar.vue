@@ -1,6 +1,7 @@
 <template>
     <aside
         class="flex flex-col w-1/6 p-2 bg-white-50 h-screen"
+        style="min-width: 180px;"
         v-if="showSidebar">
 
         <header class="flex items-center justify-between pt-1 px-2">
@@ -33,7 +34,7 @@
                         class="fill-current text-lightgray-700"
                         :is="tab.activeComponent"></component>
                     <p
-                        class="pl-6 text-gray-700"
+                        class="pl-6 text-gray-700 truncate"
                         :class="{'text-curious-blue-600':tab.name == activeSidebarTab}"
                     >{{tab.name}}</p>
 

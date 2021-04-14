@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- This CHANGELOG file on 2021-04-13 to hopefully serve as an evolving example of a
-  standardized open source project CHANGELOG.
+- This CHANGELOG file on 2021-04-13
+- A blank sidebar with the intention of creating a site specific note manager
 
 [unreleased]: https://github.com/jerlendds/studium

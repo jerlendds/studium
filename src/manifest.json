@@ -1,10 +1,14 @@
 {
+  "version": "0.0.3",
   "manifest_version": 2,
   "name": "Studium",
   "homepage_url": "http://localhost:8080/",
   "description": "retain, recall, and start remembering information and ideas from your websites",
   "default_locale": "en",
   "permissions": [
+    "tabs",
+    "storage",
+    "unlimitedStorage",
     "activeTab",
     "<all_urls>",
     "*://*/*"
@@ -17,10 +21,11 @@
   "background": {
     "scripts": [
       "js/background.js"
-    ],
-    "persistent": false
+    ]
   },
+
   "devtools_page": "devtools.html",
+
   "browser_action": {
     "default_popup": "popup.html",
     "default_title": "Studium",
@@ -29,6 +34,14 @@
       "38": "icons/logo.svg"
     }
   },
+
+  "sidebar_action": {
+    "default_icon": "icons/logo.svg",
+    "default_title" : "Studium",
+    "default_panel": "sidebar/sidebar.html"
+  },
+
+
   "options_ui": {
     "page": "options.html",
     "browser_style": true

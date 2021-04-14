@@ -1,7 +1,8 @@
 <template>
-  <div id="app">
+<div id="app" class="bg-white-300 m-0 p-0">
 
-  </div>
+</div>
+
 </template>
 
 <script>
@@ -11,3 +12,7 @@ export default {
   name: 'App',
 }
 </script>
+
+<style>
+</style>
+

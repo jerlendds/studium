@@ -13,7 +13,7 @@ module.exports = {
     override: {
       template: 'public/browser-extension.html',
       entry: './src/override/main.js',
-      title: 'Override'
+      title: 'Studium'
     },
     standalone: {
       template: 'public/browser-extension.html',
@@ -21,22 +21,27 @@ module.exports = {
       title: 'Standalone',
       filename: 'index.html'
     },
-    devtools: {
+    // devtools: {
+    //   template: 'public/browser-extension.html',
+    //   entry: './src/devtools/main.js',
+    //   title: 'Devtools'
+    // },
+    sidebar: {
       template: 'public/browser-extension.html',
-      entry: './src/devtools/main.js',
-      title: 'Devtools'
+      entry: './src/sidebar/main.js',
+      title: 'Sidebar'
     }
   },
   pluginOptions: {
     browserExtension: {
       componentOptions: {
         background: {
-          entry: 'src/background.js'
+          entry: './src/background.js'
         },
         contentScripts: {
           entries: {
             'content-script': [
-              'src/content-scripts/content-script.js'
+              './src/content-scripts/content-script.js'
             ]
           }
         }
