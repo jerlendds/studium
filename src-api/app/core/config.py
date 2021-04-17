@@ -7,18 +7,9 @@ class DatabaseConfig:
     def __init__(self,
                  url: Optional[str], full_commit: Optional[bool] = True, session: Optional = None
                  ):
-        self.url = self._get_url(url)
+        self.url = _get_url(url)
         self.full_commit = full_commit
         self.session = session
-
-    @staticmethod
-    def _get_url(url: str) -> str:
-        server_url = url
-        if len(server_url) < 18:  # https://1:2@3:5984/ == 18, TODO: check if port is set to < 4
-            server_url = os.getenv("COUCHDB_URL", 'http://admin:password@couchdb:5984/')
-
-        print(f'CouchDB Server URL: {server_url}')
-        return server_url
 
     def _get_conf(self) -> dict:
         server_conf = {
@@ -27,6 +18,13 @@ class DatabaseConfig:
             'session': self.session
         }
         return server_conf
+
+
+def _get_url(url: str) -> str:
+    server_url = url
+    if len(server_url) < 17:  # https://1:2@3:5984/ == 18, TODO: check if port is set to < 4
+        server_url = os.getenv("COUCHDB_URL", 'http://admin:password@couchdb:5984/')
+    return server_url
 
 
 class Database(DatabaseConfig):
