@@ -1,0 +1,48 @@
+version: "3.8"
+services:
+  db:
+    hostname: ${DB_HOSTNAME}
+    image: "${DOCKER_IMAGE_DB?Variable not set}:${TAG-latest}"
+    volumes:
+      - db-data:/opt/couchdb/data
+    env_file:
+      - .env
+    ports:
+      - 5984:5984
+    environment:
+      - COUCHDB_USER=${COUCHDB_USER}
+      - COUCHDB_PASSWORD=${COUCHDB_PASSWORD}
+      - COUCHDB_SECRET=${COUCHDB_SECRET}
+    build:
+      context: ./
+      dockerfile: couchdb.dockerfile
+
+
+  backend:
+    image: "${DOCKER_IMAGE_BACKEND?Variable not set}:${TAG-latest}"
+    ports:
+      - 8888:80
+    volumes:
+      - ./app/:/app
+    env_file:
+      - .env
+    environment:
+      - SERVER_NAME=${DOMAIN?Variable not set}
+      - SERVER_HOST=http://${DOMAIN?Variable not set}
+    depends_on:
+      - db
+    build:
+      context: ./
+      dockerfile: backend.dockerfile
+      args:
+        INSTALL_DEV: ${INSTALL_DEV-false}
+
+  # frontend:
+  #   image: "${DOCKER_IMAGE_FRONTEND?Variable not set}:${TAG-latest}"
+  #   build:
+  #     context: ./frontend
+  #     args:
+  #       FRONTEND_ENV: dev
+
+volumes:
+  db-data:

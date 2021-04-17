@@ -14,7 +14,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/jerlendds/studium">
-    <img src="src/assets/logo.svg" alt="Logo" width="80" height="80">
+    <img src="src-ext/src/assets/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Studium</h3>
@@ -30,7 +30,6 @@
     <a href="https://github.com/jerlendds/studium/issues">Report Bug</a>
     ·
     <a href="https://github.com/jerlendds/studium/issues">Request Feature</a>
-  </p>
 </p>
 
 #### Project Status
@@ -68,7 +67,7 @@ This project currently **isn't ready for public use.** If you're interested in c
 
 **coming soon...**
 
-Efficiently collect, store, and learn from information on websites. Eventually I want to integrate with other note taking applications (Notion, RemNote, etc) but for now the core feature is being able to cite and store whatever text you highlight on a webpage. When you store it you have an option to add additional notes, create flashcards from what you have, and or set review reminders
+Efficiently collect, store, and learn from information on websites. The plan is to eventually integrate with other note taking applications (Notion, RemNote, etc) but for now the core feature is being able to cite and store whatever text you highlight on a webpage. When you store it you have an option to add additional notes, create flashcards from what you have, and or set review reminders
 
 ### Built With
 
@@ -80,7 +79,7 @@ Efficiently collect, store, and learn from information on websites. Eventually I
 
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
+To get a local copy of the browser extension up and running follow these simple steps.
 
 ### Installation
 
@@ -90,20 +89,26 @@ To get a local copy up and running follow these simple steps.
    git clone https://github.com/jerlendds/studium.git
    ```
 
-2. Install packages
+2. Change the current directory to the extension src
+
+   ```sh
+   cd studium/src-ext/
+   ```
+
+4. Install packages
 
    ```sh
    yarn install
    ```
 
-3. Build extension
+5. Build extension
    ```sh
    yarn build
    ```
 
 The resulting extension can be found in the `dist/` directory.
 
-**Note:** _`Uncaught EvalError: call to eval() blocked by CSP` if this error is recieved navigate to `about:config` and set `security.csp.enable false`_
+**Note:** _`Uncaught EvalError: call to eval() blocked by CSP` if this error is received navigate to `about:config` and set `security.csp.enable false`_
 
 ## Usage
 
@@ -115,7 +120,7 @@ See the [open issues](https://github.com/jerlendds/studium/issues) for a list of
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -133,9 +138,6 @@ Jerlends - [@jerlends_0x0](https://twitter.com/@jerlends_0x0) - jerlends@tuta.io
 
 Project Link: [https://github.com/jerlendds/studium](https://github.com/jerlendds/studium)
 
-## Acknowledgements
-
-I would like to thank Noah#3612 for being an early supporter of this project.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

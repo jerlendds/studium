@@ -1,8 +1,5 @@
-node_modules/
-.github/
-*.pem
-*.pub
-*.zip
-artifacts/
-dist/
-*.db
+/src-api/.env
+/src-api/poetry.lock
+/.idea/modules.xml
+.idea/*
+/.idea/markdown-navigator-enh.xml

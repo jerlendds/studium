@@ -1,0 +1,8 @@
+node_modules/
+.github/
+*.pem
+*.pub
+*.zip
+artifacts/
+dist/
+*.db
