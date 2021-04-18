@@ -1,47 +1,18 @@
 import os
-import couchdb
-from typing import Optional
+from cloudant.client import CouchDB
+from requests.adapters import HTTPAdapter
 
+# TODO: lots to do... create an interface for creating and
+# querying notes and users, set up configurations classes here
 
-class DatabaseConfig:
-    def __init__(self,
-                 url: Optional[str], full_commit: Optional[bool] = True, session: Optional = None
-                 ):
-        self.url = _get_url(url)
-        self.full_commit = full_commit
-        self.session = session
+httpAdapter = HTTPAdapter(pool_connections=15, pool_maxsize=100)
 
-    def _get_conf(self) -> dict:
-        server_conf = {
-            'url': self.url,
-            'full_commit': self.full_commit,
-            'session': self.session
-        }
-        return server_conf
+conf = {
+    'user': os.getenv("COUCHDB_USER"),
+    'auth_token': os.getenv("COUCHDB_PASSWORD"),
+    'url': os.getenv("COUCHDB_URL"),
+    'connect': True
+}
 
-
-def _get_url(url: str) -> str:
-    server_url = url
-    if len(server_url) < 17:  # https://1:2@3:5984/ == 18, TODO: check if port is set to < 4
-        server_url = os.getenv("COUCHDB_URL", 'http://admin:password@couchdb:5984/')
-    return server_url
-
-
-class Database(DatabaseConfig):
-    def __init__(self, url: Optional[str] = '', db_server: Optional[couchdb.Server] = None):
-        super().__init__(url)
-        self.db_server = db_server
-
-    def connect(self):
-        if self.db_server is None:
-            server_conf = self._get_conf()
-            server = couchdb.Server(**server_conf)
-            print(f"No server passed in. Connecting to {self.url}")
-            return server
-        else:
-            server = self.db_server
-            print(f"Connecting to {self.url}")
-            return server
-
-
-API_V1_STR = "/api/v1"
+# TODO: Refactor
+client = CouchDB(**conf)

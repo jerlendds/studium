@@ -15,7 +15,8 @@ python-jose = "^3.2.0"
 passlib = {extras = ["bcrypt"], version = "^1.7.4"}
 pydantic = "^1.8.1"
 sentry-sdk = "^1.0.0"
-CouchDB = "^1.2"
+cloudant = "^2.14.0"
+requests = "^2.25.1"
 
 [tool.poetry.dev-dependencies]
 
