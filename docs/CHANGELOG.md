@@ -12,16 +12,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Connected login endpoints to database 2021-04-20
-
 - FastAPI account creation endpoint 2021-04-19
-  - Added dependency email-validator
-
+- Added dependency email-validator
 - FastAPI dependency w/ intention of creating public api 2021-04-17
-
 - CouchDB dependency 2021-04-16
-
 - This CHANGELOG file on 2021-04-13
-  - A blank sidebar with the intention of creating a site specific note manager
+- A blank sidebar with the intention of creating a site specific note manager
 
 
 ### Changed
