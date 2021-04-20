@@ -2,12 +2,37 @@ from passlib.context import CryptContext
 from jose import JWTError, jwt
 from fastapi.security import OAuth2PasswordBearer
 from fastapi import Depends, HTTPException, status
+from email_validator import validate_email, EmailNotValidError
 
 from .jwt import SECRET_KEY, ALGORITHM
-from .models import UserInDB, TokenData, User, fake_users_db
+from .models import UserInDB, TokenData, User
+
+fake_users_db = {}  # Todo: implement cloudant
 
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+
+
+def is_valid_email(unknown_email: str) -> dict:
+    """https://pypi.org/project/email-validator/
+    Validates an email and returns dict with normalized form or human-readable error message.
+
+    dict keys: is_valid, value (email or error message)
+    :param unknown_email: an email address
+    :return:
+    """
+    try:
+        email_address = validate_email(unknown_email)
+        email = email_address.email
+        return {
+            'value': email,
+            'is_valid': True
+        }
+    except EmailNotValidError as e:
+        return {
+            'value': str(e),
+            'is_valid': False
+        }
 
 
 def verify_password(plain_password, hashed_password):

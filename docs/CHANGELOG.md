@@ -8,14 +8,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Added dependency email-validator
+- FastAPI account creation endpoint 2021-04-19
 - FastAPI dependency w/ intention of creating public api 2021-04-17
 - CouchDB dependency 2021-04-16
-- 
 - This CHANGELOG file on 2021-04-13
 - A blank sidebar with the intention of creating a site specific note manager
+
 
 ### Changed
 - Refactored browser-extension into src-ext
 
-[unreleased]: https://github.com/jerlendds/studium
+
+### Removed
+- Database classes. These will be reimplemented once I determine common uses
+[Unreleased]: https://github.com/jerlendds/studium
 
