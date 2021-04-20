@@ -1,6 +1,7 @@
 import os
 
 from cloudant import CouchDB
+from cloudant.error import CloudantClientException
 
 
 class Database:
@@ -21,7 +22,7 @@ class Database:
         try:
             users_db = self.client['users']
 
-        except Exception as e:
+        except KeyError as e:
             print(e)
             users_db = 'users'
             print(f"[CouchDB] Creating database: {users_db}")

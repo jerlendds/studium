@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Authentication endpoints now use email as the unique id 2021-04-20
+
 ### Added
 - Connected login endpoints to database
 - Added dependency email-validator

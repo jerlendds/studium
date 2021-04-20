@@ -52,6 +52,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
     try:
         payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
         user_email: str = payload.get("sub")
+        print(user_email)
         if user_email is None:
             raise credentials_exception
         token_data = TokenData(user_email=user_email)
@@ -60,6 +61,9 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
     user = get_user(user_email=token_data.user_email)
     if user is None:
         raise credentials_exception
+    user.__delattr__('hashed_password')
+    user.__delattr__('_rev')
+    user.__delattr__('is_superuser')
     return user
 
 
