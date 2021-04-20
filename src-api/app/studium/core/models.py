@@ -2,7 +2,7 @@ import os
 from datetime import datetime
 from typing import Optional
 
-from pydantic import BaseModel, Extra
+from pydantic import BaseModel, Extra, EmailStr
 
 SECRET_KEY = os.getenv("SUPER_SECRET_KEY")
 ALGORITHM = "HS256"
@@ -20,8 +20,8 @@ class NewUser(BaseModel):
 class User(BaseModel):
     username: str
     # TODO: look into pydantic and determine how...
-    # to return `_id` key when passing in `email` key
-    _id: str  # _id == email
+    # .. to return `_id` key for .dict() when `email` key is given
+    _id: EmailStr  # _id == email
     account_type: str = "free"  # free || basic || pro
     disabled: Optional[bool] = False
     ctime: str = str(datetime.now())
@@ -44,4 +44,4 @@ class Token(BaseModel):
 
 
 class TokenData(BaseModel):
-    username: Optional[str] = None
+    user_email: Optional[str] = None
