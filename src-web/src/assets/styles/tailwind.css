@@ -1,0 +1,42 @@
+@import url("fonts.css");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer utilities {
+  @variants responsive {
+    /* Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+      overflow: auto;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    /*for FireFox*/
+    .no-focus::-moz-focus-inner,
+    .no-focus::-moz-focus-inner {
+      border: 0;
+    }
+    /*for IE8 and below */
+    .no-focus:focus,
+    .no-focus:focus {
+      outline: none;
+    }
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    .leading-0 {
+      line-height: 0;
+    }
+  }
+}

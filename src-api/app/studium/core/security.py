@@ -40,7 +40,7 @@ def authenticate_user(user_email: str, password: str):
     return user
 
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
 
 
 async def get_current_user(token: str = Depends(oauth2_scheme)):

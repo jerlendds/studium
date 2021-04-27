@@ -2,14 +2,15 @@ import os
 from datetime import timedelta, datetime
 
 import sentry_sdk
-from fastapi import FastAPI, HTTPException, status, Depends
 from fastapi.security import OAuth2PasswordRequestForm
+from fastapi import FastAPI, HTTPException, status, Depends
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import ValidationError
 from cloudant import CouchDB
 from cloudant.error import CloudantDatabaseException
 
 from studium.core.datacontroller import Database
-from studium.core.models import User, Token, NewUser, UserInDB
+from studium.core.models import User, NewUser, UserInDB, UserLogin
 from studium.core.security import authenticate_user, get_current_active_user, get_password_hash
 from studium.core.jwt import create_access_token, ACCESS_TOKEN_EXPIRE_MINUTES
 
@@ -31,10 +32,26 @@ db = Database()
 users_db = db.get_users()
 
 
-app = FastAPI()
+app = FastAPI(debug=True)
 
 
-@app.post("/account/create")
+origins = [
+    "http://localhost.tiangolo.com",
+    "https://localhost.tiangolo.com",
+    "http://localhost",
+    "http://localhost:8080",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.post("/create-account")
 async def create_account(form_data: NewUser):
     """
     Creates an account where email is the unique field
@@ -78,10 +95,12 @@ async def create_account(form_data: NewUser):
                          'me at jerlends@tuta.io'}
 
 
-@app.post("/token", response_model=Token)
-async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
+@app.post("/login")
+async def login(form_data: OAuth2PasswordRequestForm = Depends()):  # form_data: UserLogin
     # username == _id == email
+    print(form_data)
     user = authenticate_user(form_data.username, form_data.password)
+
     if not user:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,

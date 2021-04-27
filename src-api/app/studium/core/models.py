@@ -16,6 +16,11 @@ class NewUser(BaseModel):
     password_two: str
 
 
+class UserLogin(BaseModel):
+    username: str
+    password: str
+
+
 # _id == email
 class User(BaseModel):
     username: str

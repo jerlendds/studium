@@ -2,22 +2,22 @@ module.exports = {
   pages: {
     popup: {
       template: 'public/browser-extension.html',
-      entry: './src-extension/popup/main.js',
+      entry: './src/popup/main.js',
       title: 'Popup'
     },
     options: {
       template: 'public/browser-extension.html',
-      entry: './src-extension/options/main.js',
+      entry: './src/options/main.js',
       title: 'Options'
     },
     override: {
       template: 'public/browser-extension.html',
-      entry: './src-extension/override/main.js',
+      entry: './src/override/main.js',
       title: 'Studium'
     },
     standalone: {
       template: 'public/browser-extension.html',
-      entry: './src-extension/standalone/main.js',
+      entry: './src/standalone/main.js',
       title: 'Standalone',
       filename: 'index.html'
     },
@@ -28,7 +28,7 @@ module.exports = {
     // },
     sidebar: {
       template: 'public/browser-extension.html',
-      entry: './src-extension/sidebar/main.js',
+      entry: './src/sidebar/main.js',
       title: 'Sidebar'
     }
   },
@@ -36,12 +36,12 @@ module.exports = {
     browserExtension: {
       componentOptions: {
         background: {
-          entry: './src-extension/background.js'
+          entry: './src/background.js'
         },
         contentScripts: {
           entries: {
             'content-script': [
-              './src-extension/content-scripts/content-script.js'
+              './src/content-scripts/content-script.js'
             ]
           }
         }
