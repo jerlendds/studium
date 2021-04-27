@@ -5,6 +5,7 @@ module.exports = {
       // './src/**/*.html',
       // './src/**/*.vue',
       // './src/**/*.jsx',
+
     ]
   },
   darkMode: false, // or 'media' or 'class'

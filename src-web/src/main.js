@@ -4,10 +4,10 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 
-// import "tailwindcss/tailwind.css"
 
 Vue.config.productionTip = false
 
+// Auth stuff... see ./store/index.js
 Vue.prototype.$http = axios
 const token = localStorage.getItem('token')
 if (token) {
@@ -17,5 +17,9 @@ if (token) {
 new Vue({
   router,
   store,
-  render: h => h(App)
+  render: h => h(App),
 }).$mount('#app')
+
+
+
+// app.component('VueShowdown', VueShowdown);
