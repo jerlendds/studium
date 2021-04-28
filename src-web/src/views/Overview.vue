@@ -1,17 +1,23 @@
 <template>
-    <section class="flex w-full items-center justify-around">
+    <section
+        class="rounded shadow-4 flex flex-col w-9/12 m-20 rounded-2xl px-6 h-full bg-white-100"
+        style="transition: width .3s ease-in"
+    >
         <textarea
+            class="w-0 h-0 bg-opacity-0 overflow-hidden"
             id="source-text"
-            ref="source-text"
-            class=""
+            ref="sourcenode"
             v-model="sourceText"
             @keydown="convertToHtml"
         >
 
         </textarea>
         <div
+            ref="renderText"
             v-html="renderNode"
-            class="inherit list-disc"
+            class="inherit list-disc flex flex-col text-base overflow-y-scroll w-full h-full"
+            @click.prevent="e => focusText(e)"
+            style="max-height: 80vh; min-height: 80vh;"
         >
 
         </div>
@@ -32,70 +38,84 @@ export default {
 
     data() {
         return {
-            sourceText: `### Atx Style
+            sourceText: `# This is an h1 tag
+## This is an h2 tag
+###### This is an h6 tag
 
-You can create a heading by adding one or more # symbols before your heading text. The number of # you use will determine the size of the heading. This is similar to [**atx style**][atx].
+It's very easy to make some words **bold** and other words *italic* with Markdown. 
+You can even [link to Google!](http://google.com)
 
-\`\`\`md
-# The largest heading (an <h1> tag)
-## The second largest heading (an <h2> tag)
-…
-###### The 6th largest heading (an <h6> tag)
+* Item 1
+* Item 2
+  * Item 2a
+  * Item 2b
+
+1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b
+
+![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)
+
+http://github.com - automatic!
+[GitHub](http://github.com)
+
+
+
+As Kanye West said:
+
+> We're living the future so
+> the present is our past.
+
+I think you should use an
+\`<addr>\` element here instead.
 \`\`\`
-
-The space between \`#\` and the heading text is not required but you can make that space mandatory by enabling the option **\`requireSpaceBeforeHeadingText\`**.
-
-You can wrap the headings in \`#\`. Both leading and trailing \`#\` will be removed.
-
-\`\`\`md
-## My Heading ##
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
 \`\`\`
-
-If, for some reason, you need to keep a leading or trailing \`#\`, you can either add a space or escape it:
-
-\`\`\`md
-# # My header # #
-
-## My Header # #
 \`\`\`
-
-### Setext style
-
-You can also use [**setext style**][setext] headings, although only two levels are available.
-
-\`\`\`md
-This is an H1
-=============
-    
-This is an H2
--------------
-\`\`\`
-
-Testing stuff \`here\` ok`,
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+\`\`\``,
             renderNode: '',
             converter: undefined
         }
     },
 
+
     mounted() {
         const classMap = {
-            h1: 'text-2xl',
-            h2: 'text-3xl',
-            h3: 'text-4xl',
-            h4: 'text-5xl',
-            h5: 'text-6xl',
-            h6: 'text-7xl',
-            ul: 'list-disc',
-            li: 'list-disc',
-            pre: 'bg-gray-900 px-1 text-white-50 rounded w-min',
-            code: 'text-inherit rounded bg-inherit',
-        }
+            p: 'py-1 px-0.5',
+            h1: 'text-3xl my-2 font-semibold',
+            h2: 'text-2xl my-2 font-semibold',
+            h3: 'text-xl my-1.5 font-semibold',
+            h4: 'text-xl my-1.5 font-semibold',
+            h5: 'text-lg my-1 font-semibold',
+            h6: 'text-lg my-1 font-semibold',
+            ol: 'mb-4 ml-8 list-decimal',
+            ul: 'mb-4 ml-8 list-disc',
+            li: 'mb-0 ml-8 list-disc',
+            pre: 'rounded w-min code text-white-50 font-normal py-1',
+            code: 'rounded code font-normal px-1 text-white-50 py-0.5 bg-gray-900 rounded',
+            a: 'text-blue-600 hover:underline',
+            blockquote: 'bg-opacity-40 rounded-sm w-min min-w-1/2 p-2 mx-3 bg-gray-100 mb-4 border-1 border-gray-300 italic',
 
+
+        }
         const bindings = Object.keys(classMap)
             .map(key => ({
                 type: 'output',
                 regex: new RegExp(`<${key}(.*)>`, 'g'),
-                replace: `<${key} class="${classMap[key]}" $1>`
+                replace: `<${key} class="${classMap[key]}" $1>`,
+
             }));
 
         const conv = new showdown.Converter({
@@ -111,24 +131,17 @@ Testing stuff \`here\` ok`,
     methods: {
         convertToHtml: function () {
             var html = this.converter.makeHtml(this.sourceText)
-
             this.renderNode = html
-        }
+        },
 
+        focusText: function (e) {
+            console.log(e)
+            this.$refs.sourcenode.focus()
+        },
     }
 
 }
 </script>
 
-<style lang="scss" scoped>
-pre,
-code,
-kbd,
-samp {
-    font-family: inherit;
-}
-.bg-inherit {
-    background-color: inherit !important;
-    background: inherit !important;
-}
+<style lang="scss">
 </style>

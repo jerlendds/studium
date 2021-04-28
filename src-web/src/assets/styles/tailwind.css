@@ -40,3 +40,9 @@
     }
   }
 }
+
+@layer utilities {
+  .code {
+    font-family: "Fira Code" !important;
+  }
+}
