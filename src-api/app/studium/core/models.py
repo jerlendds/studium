@@ -11,7 +11,7 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7
 
 class NewUser(BaseModel):
     username: str
-    email: str
+    email: EmailStr
     password_one: str
     password_two: str
 

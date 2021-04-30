@@ -1,6 +1,6 @@
 <template>
     <section
-        class="rounded shadow-4 flex flex-col w-9/12 m-20 rounded-2xl px-6 h-full bg-white-100"
+        class="rounded shadow-2xl flex flex-col rounded-2xl px-6 my-6 bg-white-100"
         style="transition: width .3s ease-in"
     >
         <textarea
@@ -26,11 +26,10 @@
 </template>
 
 <script>
-import showdown from 'showdown';
-showdown.setOption('metadata', true);
+
 
 export default {
-    name: 'Overview',
+    name: 'CreateNote',
 
     components: {
     },
@@ -61,40 +60,37 @@ export default {
             code: 'rounded code font-normal px-1 text-white-50 py-1 bg-gray-900 rounded my-1',
             a: 'text-blue-600 hover:underline',
             blockquote: 'bg-opacity-40 rounded-sm w-min min-w-1/2 p-2 mx-3 bg-gray-100 mb-4 border-1 border-gray-300 italic',
-
-
         }
-        const bindings = Object.keys(classMap)
-            .map(key => ({
-                type: 'output',
-                regex: new RegExp(`<${key}(.*)>`, 'g'),
-                replace: `<${key} class="${classMap[key]}" $1>`,
+        // const bindings = Object.keys(classMap)
+        //     .map(key => ({
+        //         type: 'output',
+        //         regex: new RegExp(`<${key}(.*)>`, 'g'),
+        //         replace: `<${key} class="${classMap[key]}" $1>`,
 
-            }));
+        //     }));
 
-        const conv = new showdown.Converter({
-            extensions: [...bindings]
-        });
-        conv.setFlavor('github');
+        // const conv = new showdown.Converter({
+        //     extensions: [...bindings]
+        // });
+        // conv.setFlavor('github');
 
-        this.converter = conv
+        // this.converter = conv
 
-        this.convertToHtml()
+        // this.convertToHtml()
 
     },
 
     methods: {
         convertToHtml: function () {
-            var html = this.converter.makeHtml(this.sourceText)
-            this.renderNode = html
+            // var html = this.converter.makeHtml(this.sourceText)
+            // this.renderNode = html
         },
 
         focusText: function (e) {
-            console.log(e)
-            this.$refs.sourcenode.focus()
+            // console.log(e)
+            // this.$refs.sourcenode.focus()
         },
     }
-
 }
 </script>
 
